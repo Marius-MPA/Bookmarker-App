@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta http-eqiuv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     <title>Site Bookmarker</title>
+
+     <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+     <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onload="fetchBookmarks()">
+    <div class="container text-center">
+        <div class="header clearfix">
+            <nav>
+            </nav>
+            <h3 class="text-muted primary">Bookmarker</h3>
+        </div>
+        <div class="jumbotron">
+            <h2>Bookmark your favorite sites</h2>
+            <form id="myForm">
+                <div class="form-group">
+                    <label><strong>Site Name</strong></label>
+                    <input type="text" class="form-control" id="siteName" placeHolder="Website Name">
+                </div>
+                <div class="form-group">
+                    <label><strong>Site URL</strong></label>
+                    <input type="text" class="form-control" id="siteUrl" placeHolder="Website URL">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="row marketing text-left .align-middle ">
+            <div class="col-lg-12 ">
+                <div id="bookmarksResults" class="">
+
+                </div>
+            </div>
+        </div>
+        <footer >
+            <p class="float-left">&copy; 2020 Bookmarker, Inc.</p>
+        </footer>
+
+    </div>
+ 
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+      
+    <script src="js/bootstrap.min.js" ></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
